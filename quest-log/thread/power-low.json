@@ -1,0 +1,12 @@
+{
+  "_id": "power-low",
+  "plot": {
+    "hook": "Hmm, I'm going to need more power. Please do what you can, but I think 2 will be enough ?",
+    "required" : {
+      "power": 2
+    }
+  },
+  "goal": "That'll do, thanks!",
+  "perspective": 2,
+  "tags": ["tutorial"]
+}
