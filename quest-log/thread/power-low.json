@@ -1,14 +1,20 @@
 {
-  "name": "power-low",
-  "plot": {
-    "hook": "Hmm, I'm going to need more power. Please do what you can, but I think 2 will be enough ?",
-    "required" : [
-      { "key": "power", "value": "2" }
-    ]
-  },
-  "goal": {
-    "hook": "That'll do, thanks!"
-  },
+  "name": "Power Low",
+  "hooks": [
+    {
+      "hook": "->torti.Low Power",
+      "required" : [
+        "{Power 2}"
+      ]
+    },
+    {
+      "hook": ["good-vs-evil"],
+      "trigger": "{bossFight true}"
+    },
+    {
+      "hook": "That'll do, thanks!"
+    }
+  ],
   "perspective": "two",
   "tags": ["tutorial"]
 }

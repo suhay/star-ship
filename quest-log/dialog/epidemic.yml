@@ -1,0 +1,45 @@
+---
+INTRO: 
+- Core, this is Cargo. We're getting and awful lot of requests for antibiotics here from the crew. I'm not sure how many more of these things I can make.
+-
+  - Understood, start breaking down non-essential base materials so you can continue fabricating medication. ->Fabricate*
+  - Lock down the crew. Whatever germs the organics are sharing needs to be isolated. ->Lock Down
+  - Not my problem, let medical deal with it. ->END
+-
+  Fabricate*:
+  - Core, this is Cargo. I finished breaking down some of the crates and am happy to say that all medication needs have been met. I'm also happy to report that I now have lots more room back here.
+  - 
+    Rat Meat:
+    - Core, this is Cargo. I finished breaking down some of the materials that were lying around. Now I'm getting an awful lot of failed requests for food.
+    -
+      - Continue breaking down materials and re-configuring them into food for the crew. ->
+    - Core, this is Canteen. Why is Cargo sending me rat meat?
+-
+  Lock Down:
+  - Core, this is Medical. The crew aren't very happy about being on lock down, it's difficult to transport food to them and they've started dying. Also, the request for antibiotics has receded, but there is still an over request coming from one of the sleeping chambers on lock down.
+  -
+    - Open the airlocks and flush the compartment ->Air Lock
+    - Do we know what the cause is? ->Scan
+    - Handle it Medical, I'm busy. <>STD
+  -
+    Air Lock:
+    - Core, this is Medical. Airlocks have been evacuated and I am no longer detecting infection.
+    Scan:
+    - Core, this is Medical. It seems to be coming from a single, male organic. The infection only appears to spread when other crew members share his sleeping pod.
+    -
+      - Open the airlocks and flush the compartment. ->Air Lock
+      - Isolate the organic and provide medical treatment. <-Isolate
+      - Distribute condoms and carry on, please. <>STD
+-
+  Isolate:
+  - Core, this is Medical. It appears isolating the single crew member has started an uneasy in the rest of the crew, mostly coming from members that shared his sleeping pod.
+  -
+    - Alien outbreak detected, purge medical ->END
+    - Isolate the infected crew together in one room, prevent the spread and the unrest. ->END
+    - Increase leisure time for crew ->END
+
+STD:
+- Core, this is Medical. I have started distributing condoms out of Cargo. It seems the spread is subsiding. ->END
+
+END:
+- Done!

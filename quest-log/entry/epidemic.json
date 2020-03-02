@@ -1,0 +1,10 @@
+{
+  "name": "Epidemic",
+  "hooks": [
+    {
+      "hook": "->epidemic"
+    }
+  ],
+  "tags": ["tutorial"],
+  "perspective": "two"
+}

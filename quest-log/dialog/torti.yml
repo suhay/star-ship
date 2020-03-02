@@ -1,0 +1,38 @@
+---
+INTRO: # INTRO should always be the first key, this is read out when this file is first triggered
+  - O-oh. H-hello there. I wasn't expecting to run into anyone out here.
+    I think you saved me. Or -- maybe I saved you...
+    A-actually I'm n-not sure it matters come to think of it.
+    Oh dear, I detect that I maybe rambling.
+    Umm, you -- you can detach me at any time i-if you'd like.
+    Just send me out into the void -- all alone, cold -- and alone.
+    Or I can just, you know, stick -- around with you.
+    It's, I mean, it's completely up to you. You do you, that's what is the most important.
+  -
+    # an empty continue is shorthand for the next sibling
+    - Who are you? ->
+    # expressions at the beginning of dialog choices will only appear when true
+    - '{game.plays >= 1} Ahh! Torti, good to see you! ->I know you'
+    # a named 'continue' tells the engine to search for a parent
+    - Ok, bye! {game.mood -10} ->END
+  - W-who, me?
+    Oh, I'm just, umm -- I'm just Torti.
+    Just little Torti.
+    Umm -- hi!
+  -
+    I know you: 
+      - You know me?! How can that be???
+      -
+        - Because science! ->
+        - There's no time to explain... ->
+      - Oh, umm, ok?
+        Should I be concerned?
+      -
+        - Deeply. ->
+Power Low: So. I know you're still deciding if you should detach me.
+  And that's fine! For reals, if you want me gone, boom, done, cya!
+  But, i-if you wouldn't mind -- I could use a little extra power.
+  I-if it's not too much trouble!
+  Oh geez, I'm sweating I'm so nervous. Or, at -- at least I think I'm sweating.
+  Can modules sweat in space?
+END: It was nice getting to know you! # END signifies the terminating key in a dialog tree
