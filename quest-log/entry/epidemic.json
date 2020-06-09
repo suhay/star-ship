@@ -5,6 +5,8 @@
       "hook": "->epidemic"
     }
   ],
-  "tags": ["tutorial"],
+  "tags": [
+    "tutorial"
+  ],
   "perspective": "two"
 }
